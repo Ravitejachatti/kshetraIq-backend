@@ -6,8 +6,8 @@ const { initCronJobs } = require("./services/cronService");
 async function start() {
   await connectDB();
 
-  // Start Cron Jobs
-  initCronJobs();
+  // // Start Cron Jobs
+  // initCronJobs();
 
   app.listen(ENV.PORT, () => {
     console.log(`🚀 Server running on port ${ENV.PORT}`);

@@ -19,6 +19,10 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok", service: "ap-agri-guard-backend" });
 });
 
+app.get("/", (req,res) =>{
+  res.send("Welcome to AP Agri Guard Backend")
+})
+
 app.use("/api", routes);
 
 
