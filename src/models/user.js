@@ -13,8 +13,8 @@ const UserSchema = new mongoose.Schema(
       required: true,
       default: ROLES.FARMER,
     },
-    mandal: { type: String },
-    district: { type: String },
+    mandal: { type: Number },
+    district: { type: Number },
   },
   { timestamps: true }
 );

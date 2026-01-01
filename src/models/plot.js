@@ -4,8 +4,8 @@ const PlotSchema = new mongoose.Schema(
   {
     farmer: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
     name: { type: String, required: true },
-    district: { type: String, required: true },  // Guntur / Krishna
-    mandal: { type: String, required: true },    // Chilakaluripet / Vuyyuru
+    district: { type: Number, required: true },  // ID ref to Location
+    mandal: { type: Number, required: true },    // ID ref to Location.mandals
     village: { type: String, required: true },
     location: {
       lat: { type: Number, required: true },
